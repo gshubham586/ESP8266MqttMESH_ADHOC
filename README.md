@@ -17,18 +17,18 @@ The deepSleep mode is also available for nodes in the mesh network which reduces
 4. Go to Tools -> Board (where you’d select your version of Arduino) -> Boards Manager,type and search for the ESP8266 and click Install. You now should be able to use the ESP8266    as an Arduino. Simply select the "NODEMCU 1.0(ESP-12E MODULE)" as your board with Port and you should be ready to code.
 Now, with ESP8266 board installed to Arduino IDE, we can program NodeMCU using Arduino IDE directly.
 **1.   [painlessMesh]([https://github.com/gmag11/painlessMesh](https://github.com/gmag11/painlessMesh))** 
-##
+
 **2. PubSubClient.h**  (Mqtt)
  <Open Arduino IDE, Go to Sketch -> Include Library -> Manage Libraries , Type and search for "**PubSubClient**" by **Nick O'Leary** and install it.>
- ##
- **3. [ArduinoJson]([https://github.com/bblanchon/ArduinoJson](https://github.com/bblanchon/ArduinoJson))**
- ##
- **4. [TaskScheduler]([https://github.com/arkhipenko/TaskScheduler](https://github.com/arkhipenko/TaskScheduler))**
- ##
- **5. [ESPAsyncTCP]([https://github.com/me-no-dev/ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP))**  (ESP8266)
- ##
- **6. [AsyncTCP]([https://github.com/me-no-dev/AsyncTCP](https://github.com/me-no-dev/AsyncTCP))** (ESP32)
- ##
+
+ **3. [ArduinoJson](https://github.com/bblanchon/ArduinoJson)**
+
+ **4. [TaskScheduler](https://github.com/arkhipenko/TaskScheduler)**
+
+ **5. [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP)**  (ESP8266)
+
+ **6. [AsyncTCP](https://github.com/me-no-dev/AsyncTCP)** (ESP32)
+
 
 ### 2.Python
 
