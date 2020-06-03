@@ -38,3 +38,13 @@ Now, with ESP8266 board installed to Arduino IDE, we can program NodeMCU using A
 #### 2. Install paho-mqtt
 Now you have to install paho python client.This code provides a client class which enable applications to connect to an MQTT broker to publish messages, and to subscribe to topics and receive published messages. you can visit [here](https://pypi.org/project/paho-mqtt/) for installation instructions.
 
+
+#### Setup :
+1. Create a  **Wi-Fi  HOTSPOT** using your smartphone or router.
+2. Now connect your PC with it using Wi-Fi.
+3. Open **command prompt** and type  **ipconfig** and run to know your local ip address (This method is for **windows OS** PC. if you are not using windows operating system then search for methods to know your ip address.)
+4. Now open the Arduino code and edit few lines of codes as per requirement.
+5.  Now open python code and make few changes as per requirement.
+6. Now upload the arduino code in ESP8266 Nodemcu via USB cable. And run the python code in your PC. A file with "**Filename**" will be generated in same folder where the python code is present. This file will contain the data send by nodes of mesh network.
+
+**Note:** For deepsleep mode connect D0 pin with RST pin of ESP8266(nodes) after uploading the program. Remove connection between D0 and RST pin while uploading code otherwise code will not be uploaded.
