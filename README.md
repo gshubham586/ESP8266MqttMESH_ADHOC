@@ -18,7 +18,7 @@ The deepSleep mode is also available for nodes in the mesh network which reduces
 Now, with ESP8266 board installed to Arduino IDE, we can program NodeMCU using Arduino IDE directly.
 #### Required Libraries in Arduino IDE:
 **1.   [painlessMesh]([https://github.com/gmag11/painlessMesh](https://github.com/gmag11/painlessMesh))** 
-**2. PubSubClient.h**  (Mqtt)
+**2.   PubSubClient.h**  (Mqtt)
  <Open Arduino IDE, Go to Sketch -> Include Library -> Manage Libraries , Type and search for "**PubSubClient**" by **Nick O'Leary** and install it.>
  **3. [ArduinoJson]([https://github.com/bblanchon/ArduinoJson](https://github.com/bblanchon/ArduinoJson))**
  **4. [TaskScheduler]([https://github.com/arkhipenko/TaskScheduler](https://github.com/arkhipenko/TaskScheduler))**
