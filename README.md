@@ -16,7 +16,8 @@ The deepSleep mode is also available for nodes in the mesh network which reduces
 3. Close the IDE and open it up again.
 4. Go to Tools -> Board (where you’d select your version of Arduino) -> Boards Manager,type and search for the ESP8266 and click Install. You now should be able to use the ESP8266    as an Arduino. Simply select the "NODEMCU 1.0(ESP-12E MODULE)" as your board with Port and you should be ready to code.
 Now, with ESP8266 board installed to Arduino IDE, we can program NodeMCU using Arduino IDE directly.
-**1.   [painlessMesh]([https://github.com/gmag11/painlessMesh](https://github.com/gmag11/painlessMesh))** 
+
+**1.   [painlessMesh]([https://github.com/gmag11/painlessMesh)** 
 
 **2. PubSubClient.h**  (Mqtt)
  <Open Arduino IDE, Go to Sketch -> Include Library -> Manage Libraries , Type and search for "**PubSubClient**" by **Nick O'Leary** and install it.>
