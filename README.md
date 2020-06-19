@@ -48,3 +48,4 @@ Now you have to install paho python client.This code provides a client class whi
 6. Now upload the arduino code in ESP8266 Nodemcu via USB cable. And run the python code in your PC. A file with "**Filename**" will be generated in same folder where the python code is present. This file will contain the data send by nodes of mesh network.
 
 **Note:** For deepsleep mode connect D0 pin with RST pin of ESP8266(nodes) after uploading the program. Remove connection between D0 and RST pin while uploading code otherwise code will not be uploaded.
+![alt tag](https://user-images.githubusercontent.com/36708171/85125784-dee30c80-b249-11ea-9ec4-7c1daf3d03e8.png)
