@@ -1,4 +1,5 @@
 //************************************************************
+
 // this is a simple example that uses the painlessMesh library to connect to a another network and relay messages from a
 // MQTT broker to the nodes of the mesh network. It acts as bridge between mesh network and mqtt broker.
 // To send a message to a mesh node, you can publish it to "painlessMesh/to/12345678" where 12345678 equals the nodeId.
@@ -6,9 +7,13 @@
 // When you publish "getNodes" to "painlessMesh/to/gateway" you receive the mesh topology as JSON
 // Every message from the mesh which is send to the gateway node will be published to "painlessMesh/from/12345678" where 12345678 
 // is the nodeId from which the packet was send.
-//************************************************************
 
-//To know Node id, Upload code to Nodemcu, Open Serial Monitor and Press RST button on Nodemcu
+
+// To know Node id, Upload code to Nodemcu, Open Serial Monitor and Press RST button on Nodemcu.
+// Enter wi-fi ssid and wi-fi password in line 24 and 25 respectively.
+// Enter local ip address/mqtt broker server ip address in line 40.
+
+//************************************************************
 
 #include <Arduino.h>
 #include <painlessMesh.h>
@@ -81,6 +86,8 @@ void receivedCallback( const uint32_t &from, const String &msg ) {
   //Serial.printf("bridge: Received from %u msg=%s\n", from, msg.c_str());
   String topic = "painlessMesh/from/" + String(from);
   mqttClient.publish(topic.c_str(), msg.c_str());
+  Serial.println(mesh.asNodeTree().toString());                                   // Gives the mesh network tree structre
+
 }
 
 void mqttCallback(char* topic, uint8_t* payload, unsigned int length) {
